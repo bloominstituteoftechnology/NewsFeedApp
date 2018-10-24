@@ -18,6 +18,7 @@
 		7B48FCAD2180E0AA0012D803 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B48FCAC2180E0AA0012D803 /* TableViewCell.xib */; };
 		7B48FCAF2180E0B30012D803 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B48FCAE2180E0B30012D803 /* TableViewCell.swift */; };
 		7BAFB89F2181007B00A591A9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAFB89E2181007B00A591A9 /* DetailViewController.swift */; };
+		7BAFB8A12181132A00A591A9 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAFB8A02181132A00A591A9 /* PreferencesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7B48FCAC2180E0AA0012D803 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		7B48FCAE2180E0B30012D803 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7BAFB89E2181007B00A591A9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7BAFB8A02181132A00A591A9 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				7B48FCAC2180E0AA0012D803 /* TableViewCell.xib */,
 				7B48FCAE2180E0B30012D803 /* TableViewCell.swift */,
 				7BAFB89E2181007B00A591A9 /* DetailViewController.swift */,
+				7BAFB8A02181132A00A591A9 /* PreferencesViewController.swift */,
 				7B48FC982180D87C0012D803 /* Main.storyboard */,
 				7B48FC9B2180D8800012D803 /* Assets.xcassets */,
 				7B48FC9D2180D8800012D803 /* LaunchScreen.storyboard */,
@@ -157,6 +160,7 @@
 				7B48FC972180D87B0012D803 /* TableViewController.swift in Sources */,
 				7B48FCA72180D9BA0012D803 /* NewsEntry.swift in Sources */,
 				7B48FCAB2180DF900012D803 /* ImageLoader.swift in Sources */,
+				7BAFB8A12181132A00A591A9 /* PreferencesViewController.swift in Sources */,
 				7B48FCAF2180E0B30012D803 /* TableViewCell.swift in Sources */,
 				7B48FC952180D87B0012D803 /* AppDelegate.swift in Sources */,
 				7B48FCA92180DB8A0012D803 /* Model.swift in Sources */,

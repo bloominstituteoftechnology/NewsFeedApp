@@ -37,41 +37,62 @@
             </objects>
             <point key="canvasLocation" x="1510" y="-184"/>
         </scene>
-        <!--View Controller-->
+        <!--Preferences View Controller-->
         <scene sceneID="txh-g8-SrZ">
             <objects>
-                <viewController id="pyo-rH-6kP" sceneMemberID="viewController">
+                <viewController id="pyo-rH-6kP" customClass="PreferencesViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3z3-YJ-2NP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="l5b-4a-gJ4">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l5b-4a-gJ4">
                                 <rect key="frame" x="8" y="72" width="359" height="195"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of articles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stS-aR-gqv">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kcr-pu-7gQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="56"/>
+                                        <rect key="frame" x="0.0" y="28.5" width="359" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="TDC-IA-sxm"/>
+                                        </constraints>
                                         <segments>
                                             <segment title="10"/>
                                             <segment title="20"/>
                                             <segment title="50"/>
                                             <segment title="100"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="segmentedAction:" destination="pyo-rH-6kP" eventType="valueChanged" id="WLQ-if-6NC"/>
+                                        </connections>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9O-Br-pX7">
-                                        <rect key="frame" x="0.0" y="95" width="359" height="30"/>
+                                        <rect key="frame" x="0.0" y="76.5" width="359" height="55.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Dark Mode">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="darkMode:" destination="pyo-rH-6kP" eventType="touchUpInside" id="V70-pt-mV6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6E-OO-4Ba">
-                                        <rect key="frame" x="0.0" y="165" width="359" height="30"/>
+                                        <rect key="frame" x="0.0" y="140" width="359" height="55"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Light Mode">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="lightMode:" destination="pyo-rH-6kP" eventType="touchUpInside" id="pak-Eh-4a5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="M9O-Br-pX7" firstAttribute="height" secondItem="p6E-OO-4Ba" secondAttribute="height" id="AC9-Nz-f0t"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,6 +104,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fq2-vv-Fhn"/>
                     </view>
+                    <connections>
+                        <outlet property="segmentOutlet" destination="Kcr-pu-7gQ" id="Zld-Vj-wPU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hgt-4z-8cm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

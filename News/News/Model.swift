@@ -7,7 +7,6 @@ class Model {
     var records: [NewsEntry] = []
     
     func fetch(completion: @escaping () -> Void = { }) {
-        
         guard
             let baseURL = URL(string: "https://newsapi.org/v2/top-headlines"),
             var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
@@ -16,6 +15,19 @@ class Model {
         let countryItem = URLQueryItem(name: "country", value: "us")
         let apiKeyItem = URLQueryItem(name: "apiKey", value: "e10370bb15bb40079bd18129a4b7b0b5")
         components.queryItems = [countryItem, apiKeyItem]
+        
+        switch UserDefaults.standard.integer(forKey: "numberOfArticles") {
+        case 0:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "10"))
+        case 1:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "20"))
+        case 2:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "50"))
+        case 3:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "100"))
+        default:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "10"))
+        }
         
         guard let fetchURL = components.url else {
             fatalError("Components could not construct proper search query")
