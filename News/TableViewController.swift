@@ -20,6 +20,28 @@ class TableViewController: UITableViewController {
         
     }
     
+    func checkUserSettings() {
+        let darkMode = UserDefaults.standard.bool(forKey: "darkMode")
+        let surpriseMode = UserDefaults.standard.bool(forKey: "surpriseMode")
+        let numberOfArticles = UserDefaults.standard.integer(forKey: "numberOfArticles")
+        
+        if darkMode {
+            
+        }
+        
+        if surpriseMode {
+            
+        }
+        
+        switch numberOfArticles {
+        case 10:
+        case 20:
+        case 50:
+        case 100:
+            
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         Model.shared.fetch {
@@ -38,8 +60,8 @@ class TableViewController: UITableViewController {
         
         let record = Model.shared.records[indexPath.row]
         cell.titleLabel.text = record.title
-        cell.descriptionLabel.text = record.description
-        cell.textView.text = record.content
+        // cell.descriptionLabel.text = record.description
+        // cell.textView.text = record.content
         
         ImageLoader.fetchImage(from: record.urlToImage) { image in
             guard let image = image else {return}
@@ -52,9 +74,15 @@ class TableViewController: UITableViewController {
         return cell
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        <#code#>
-//    }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? DetailVC else {return}
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        destination.record = Model.shared.records[indexPath.row]
+    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "toDetailVC", sender: tableView)

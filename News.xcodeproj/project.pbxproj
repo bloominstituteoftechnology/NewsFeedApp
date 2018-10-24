@@ -17,6 +17,8 @@
 		11D83C112180DF8A0092A9E1 /* imageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D83C102180DF8A0092A9E1 /* imageLoader.swift */; };
 		11D83C132180E0A50092A9E1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D83C122180E0A50092A9E1 /* TableViewCell.xib */; };
 		11D83C152180E0AC0092A9E1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D83C142180E0AC0092A9E1 /* TableViewCell.swift */; };
+		11D83C17218101400092A9E1 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D83C16218101400092A9E1 /* DetailVC.swift */; };
+		11D83C1921810C9F0092A9E1 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D83C1821810C9F0092A9E1 /* SettingsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		11D83C102180DF8A0092A9E1 /* imageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageLoader.swift; sourceTree = "<group>"; };
 		11D83C122180E0A50092A9E1 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		11D83C142180E0AC0092A9E1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		11D83C16218101400092A9E1 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		11D83C1821810C9F0092A9E1 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +70,13 @@
 			children = (
 				11D83BFA2180D8720092A9E1 /* AppDelegate.swift */,
 				11D83BFC2180D8720092A9E1 /* TableViewController.swift */,
-				11D83BFE2180D8720092A9E1 /* Main.storyboard */,
+				11D83C16218101400092A9E1 /* DetailVC.swift */,
 				11D83C0C2180D9B80092A9E1 /* NewsEntry.swift */,
 				11D83C0E2180DB880092A9E1 /* Model.swift */,
 				11D83C102180DF8A0092A9E1 /* imageLoader.swift */,
 				11D83C122180E0A50092A9E1 /* TableViewCell.xib */,
+				11D83BFE2180D8720092A9E1 /* Main.storyboard */,
+				11D83C1821810C9F0092A9E1 /* SettingsVC.swift */,
 				11D83C142180E0AC0092A9E1 /* TableViewCell.swift */,
 				11D83C012180D8740092A9E1 /* Assets.xcassets */,
 				11D83C032180D8740092A9E1 /* LaunchScreen.storyboard */,
@@ -153,10 +159,12 @@
 			files = (
 				11D83BFD2180D8720092A9E1 /* TableViewController.swift in Sources */,
 				11D83C0D2180D9B80092A9E1 /* NewsEntry.swift in Sources */,
+				11D83C1921810C9F0092A9E1 /* SettingsVC.swift in Sources */,
 				11D83C112180DF8A0092A9E1 /* imageLoader.swift in Sources */,
 				11D83C152180E0AC0092A9E1 /* TableViewCell.swift in Sources */,
 				11D83BFB2180D8720092A9E1 /* AppDelegate.swift in Sources */,
 				11D83C0F2180DB880092A9E1 /* Model.swift in Sources */,
+				11D83C17218101400092A9E1 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
