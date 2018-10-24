@@ -25,6 +25,21 @@ class Model {
         let apiKeyItem = URLQueryItem(name: "apiKey", value: "e272bc5703cd4728b50c5e6588bc96ff")
         components.queryItems = [countryItem, apiKeyItem]
         
+        switch UserDefaults.standard.integer(forKey: "numberOfArticles") {
+        case 0:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "10"))
+        case 1:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "20"))
+        case 2:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "50"))
+        case 3:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "100"))
+        default:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "20"))
+        }
+        
+       
+        
         guard let requestURL = components.url else {
             fatalError("Cannot build request URL from components")
         }

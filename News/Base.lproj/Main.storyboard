@@ -62,18 +62,24 @@
                                             <segment title="50"/>
                                             <segment title="100"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="segmentedControl:" destination="4bJ-RV-Dlo" eventType="valueChanged" id="Zrt-7m-buV"/>
+                                        </connections>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="boQ-P5-xcX">
-                                        <rect key="frame" x="65" y="110" width="245.5" height="35"/>
+                                        <rect key="frame" x="66" y="110" width="243" height="35"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfF-cT-VwA">
-                                                <rect key="frame" x="0.0" y="0.0" width="86.5" height="35"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfF-cT-VwA">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="35"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fjt-i4-ZKL">
-                                                <rect key="frame" x="196.5" y="0.0" width="51" height="35"/>
+                                                <rect key="frame" x="194" y="0.0" width="51" height="35"/>
+                                                <connections>
+                                                    <action selector="darkModeSwitchClicked:" destination="4bJ-RV-Dlo" eventType="valueChanged" id="Hhc-WB-RKx"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -86,13 +92,24 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tnl-d1-ApW">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tnl-d1-ApW">
                                                 <rect key="frame" x="189" y="0.0" width="51" height="35"/>
+                                                <connections>
+                                                    <action selector="surpriseModeSwitchClicked:" destination="4bJ-RV-Dlo" eventType="valueChanged" id="pbJ-XF-yCf"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atG-P1-Cun">
+                                <rect key="frame" x="169" y="279" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButton:" destination="4bJ-RV-Dlo" eventType="touchUpInside" id="fgK-Sr-nF1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -103,6 +120,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5hw-Cb-nIO"/>
                     </view>
+                    <connections>
+                        <outlet property="lightSwitchOutlet" destination="Fjt-i4-ZKL" id="zba-r4-O6x"/>
+                        <outlet property="segmentedOutlet" destination="BrB-sL-jh4" id="GBN-rp-Kht"/>
+                        <outlet property="surpriseModeOutlet" destination="tnl-d1-ApW" id="LgU-1p-v3W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wpp-Jk-b7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
