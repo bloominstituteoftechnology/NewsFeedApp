@@ -51,6 +51,14 @@ class TableViewController: UITableViewController {
         
         return cell
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        <#code#>
+//    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "toDetailVC", sender: tableView)
+    }
 
 
 }
