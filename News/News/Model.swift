@@ -17,6 +17,20 @@ class Model {
         let apiKeyItem = URLQueryItem(name: "apiKey", value: "e3394798a5f94c07915b01d2e7a0e787")
         components.queryItems = [countryItem, apiKeyItem]
         
+        switch UserDefaults.standard.integer(forKey: "numberOfArticles") {
+        case 0:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "10"))
+        case 1:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "20"))
+        case 2:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "50"))
+        case 3:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "100"))
+        default:
+            components.queryItems?.append(URLQueryItem(name: "pageSize", value: "10"))
+        }
+        
+        
         guard let fetchURL = components.url else {
             fatalError("Components could not construct proper search query")
         }

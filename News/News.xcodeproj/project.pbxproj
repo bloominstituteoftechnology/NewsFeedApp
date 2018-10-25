@@ -22,12 +22,6 @@
 		4B0622A821810D100065306D /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622A721810D100065306D /* PreferencesTableViewController.swift */; };
 		4B0622AA218123AA0065306D /* PreferenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622A9218123AA0065306D /* PreferenceHelper.swift */; };
 		4B0622AC21812D400065306D /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622AB21812D400065306D /* ArticleDetailViewController.swift */; };
-		4B0622AE21820EA30065306D /* Theming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622AD21820EA30065306D /* Theming.swift */; };
-		4B0622B021820EBE0065306D /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622AF21820EBE0065306D /* AppTheme.swift */; };
-		4B0622B221820EE40065306D /* AppThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622B121820EE40065306D /* AppThemeProvider.swift */; };
-		4B0622B421820F200065306D /* SubscribableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622B321820F200065306D /* SubscribableValue.swift */; };
-		4B0622B621820F390065306D /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622B521820F390065306D /* Weak.swift */; };
-		4B0622B821820FC50065306D /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622B721820FC50065306D /* ArrayExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,12 +42,6 @@
 		4B0622A721810D100065306D /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
 		4B0622A9218123AA0065306D /* PreferenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceHelper.swift; sourceTree = "<group>"; };
 		4B0622AB21812D400065306D /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
-		4B0622AD21820EA30065306D /* Theming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theming.swift; sourceTree = "<group>"; };
-		4B0622AF21820EBE0065306D /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
-		4B0622B121820EE40065306D /* AppThemeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeProvider.swift; sourceTree = "<group>"; };
-		4B0622B321820F200065306D /* SubscribableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribableValue.swift; sourceTree = "<group>"; };
-		4B0622B521820F390065306D /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
-		4B0622B721820FC50065306D /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,21 +76,15 @@
 			children = (
 				4B0622842180D86C0065306D /* AppDelegate.swift */,
 				4B0622882180D86C0065306D /* Main.storyboard */,
+				4B0622982180DB8C0065306D /* Model.swift */,
+				4B0622962180D9C10065306D /* NewsEntry.swift */,
 				4B0622AB21812D400065306D /* ArticleDetailViewController.swift */,
 				4B0622A721810D100065306D /* PreferencesTableViewController.swift */,
 				4B0622A9218123AA0065306D /* PreferenceHelper.swift */,
-				4B0622962180D9C10065306D /* NewsEntry.swift */,
-				4B0622982180DB8C0065306D /* Model.swift */,
 				4B06229A2180DF9D0065306D /* ImageLoader.swift */,
 				4B06229C2180E0AA0065306D /* TableViewCell.swift */,
-				4B06229E2180E0B10065306D /* TableViewCell.xib */,
-				4B0622AD21820EA30065306D /* Theming.swift */,
-				4B0622AF21820EBE0065306D /* AppTheme.swift */,
-				4B0622B121820EE40065306D /* AppThemeProvider.swift */,
-				4B0622B321820F200065306D /* SubscribableValue.swift */,
-				4B0622B721820FC50065306D /* ArrayExtensions.swift */,
-				4B0622B521820F390065306D /* Weak.swift */,
 				4B0622A02180E27F0065306D /* TableViewController.swift */,
+				4B06229E2180E0B10065306D /* TableViewCell.xib */,
 				4B06228B2180D86E0065306D /* Assets.xcassets */,
 				4B06228D2180D86E0065306D /* LaunchScreen.storyboard */,
 				4B0622902180D86E0065306D /* Info.plist */,
@@ -194,13 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B0622B421820F200065306D /* SubscribableValue.swift in Sources */,
-				4B0622B821820FC50065306D /* ArrayExtensions.swift in Sources */,
-				4B0622B221820EE40065306D /* AppThemeProvider.swift in Sources */,
 				4B0622AA218123AA0065306D /* PreferenceHelper.swift in Sources */,
-				4B0622B021820EBE0065306D /* AppTheme.swift in Sources */,
 				4B0622A12180E27F0065306D /* TableViewController.swift in Sources */,
-				4B0622AE21820EA30065306D /* Theming.swift in Sources */,
 				4B0622972180D9C10065306D /* NewsEntry.swift in Sources */,
 				4B06229B2180DF9D0065306D /* ImageLoader.swift in Sources */,
 				4B06229D2180E0AA0065306D /* TableViewCell.swift in Sources */,
@@ -208,7 +185,6 @@
 				4B0622A821810D100065306D /* PreferencesTableViewController.swift in Sources */,
 				4B0622992180DB8C0065306D /* Model.swift in Sources */,
 				4B0622AC21812D400065306D /* ArticleDetailViewController.swift in Sources */,
-				4B0622B621820F390065306D /* Weak.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

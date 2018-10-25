@@ -26,10 +26,7 @@ class ArticleDetailViewController: UIViewController {
             fatalError()
         }
     }
-    
-    
   }
-    
 }
 
 
