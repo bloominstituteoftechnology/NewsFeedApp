@@ -21,6 +21,7 @@
 		4B0622A62180E52E0065306D /* LambdaLogoAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0622A42180E52E0065306D /* LambdaLogoAssets.xcassets */; };
 		4B0622A821810D100065306D /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622A721810D100065306D /* PreferencesTableViewController.swift */; };
 		4B0622AA218123AA0065306D /* PreferenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622A9218123AA0065306D /* PreferenceHelper.swift */; };
+		4B0622AC21812D400065306D /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622AB21812D400065306D /* ArticleDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		4B0622A42180E52E0065306D /* LambdaLogoAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LambdaLogoAssets.xcassets; sourceTree = "<group>"; };
 		4B0622A721810D100065306D /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
 		4B0622A9218123AA0065306D /* PreferenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceHelper.swift; sourceTree = "<group>"; };
+		4B0622AB21812D400065306D /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				4B0622842180D86C0065306D /* AppDelegate.swift */,
 				4B0622882180D86C0065306D /* Main.storyboard */,
+				4B0622AB21812D400065306D /* ArticleDetailViewController.swift */,
 				4B0622A721810D100065306D /* PreferencesTableViewController.swift */,
 				4B0622A9218123AA0065306D /* PreferenceHelper.swift */,
 				4B0622962180D9C10065306D /* NewsEntry.swift */,
@@ -181,6 +184,7 @@
 				4B0622852180D86C0065306D /* AppDelegate.swift in Sources */,
 				4B0622A821810D100065306D /* PreferencesTableViewController.swift in Sources */,
 				4B0622992180DB8C0065306D /* Model.swift in Sources */,
+				4B0622AC21812D400065306D /* ArticleDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

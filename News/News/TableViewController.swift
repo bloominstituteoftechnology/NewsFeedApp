@@ -42,7 +42,19 @@ class TableViewController: UITableViewController {
             }
         }
         
+        
+        
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? ArticleDetailViewController,
+            let indexPath = tableView.indexPathForSelectedRow?.row else { return }
+        destination.record = Model.shared.records[indexPath]
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "ArticleSegue", sender: tableView)
     }
     
 }
