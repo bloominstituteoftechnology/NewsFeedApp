@@ -19,6 +19,7 @@ class PreferencesViewController: UIViewController {
         default:
             UserDefaults.standard.set(0, forKey: "numberOfArticles")
         }
+//        segmentOutlet.selectedSegmentIndex = [10 : 0, 20 : 1, 50 : 2, 100 : 3]
     }
     
     @IBAction func darkMode(_ sender: Any) {
@@ -33,10 +34,10 @@ class PreferencesViewController: UIViewController {
     
     @IBAction func blueMode(_ sender: Any) {
         if isBlueMode {
-            UserDefaults.standard.set(true, forKey: "darkMode")
+            UserDefaults.standard.set(true, forKey: "blueMode")
             isBlueMode.toggle()
         } else {
-            UserDefaults.standard.set(false, forKey: "darkMode")
+            UserDefaults.standard.set(false, forKey: "blueMode")
             isBlueMode.toggle()
         }
     }
