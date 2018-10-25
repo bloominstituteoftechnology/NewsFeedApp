@@ -4,6 +4,8 @@ class Model {
     static let shared = Model()
     private init() {}
     
+    let defaults = UserDefaults.standard
+    
     var records: [NewsEntry] = []
     
     func fetch(completion: @escaping () -> Void = { }) {
@@ -17,7 +19,7 @@ class Model {
         let apiKeyItem = URLQueryItem(name: "apiKey", value: "e3394798a5f94c07915b01d2e7a0e787")
         components.queryItems = [countryItem, apiKeyItem]
         
-        switch UserDefaults.standard.integer(forKey: "numberOfArticles") {
+        switch defaults.integer(forKey: "numberOfArticles") {
         case 0:
             components.queryItems?.append(URLQueryItem(name: "pageSize", value: "10"))
         case 1:

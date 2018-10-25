@@ -20,7 +20,6 @@
 		4B0622A52180E52E0065306D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B0622A32180E52E0065306D /* LaunchScreen.storyboard */; };
 		4B0622A62180E52E0065306D /* LambdaLogoAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B0622A42180E52E0065306D /* LambdaLogoAssets.xcassets */; };
 		4B0622A821810D100065306D /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622A721810D100065306D /* PreferencesTableViewController.swift */; };
-		4B0622AA218123AA0065306D /* PreferenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622A9218123AA0065306D /* PreferenceHelper.swift */; };
 		4B0622AC21812D400065306D /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0622AB21812D400065306D /* ArticleDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		4B0622A32180E52E0065306D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B0622A42180E52E0065306D /* LambdaLogoAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LambdaLogoAssets.xcassets; sourceTree = "<group>"; };
 		4B0622A721810D100065306D /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
-		4B0622A9218123AA0065306D /* PreferenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceHelper.swift; sourceTree = "<group>"; };
 		4B0622AB21812D400065306D /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +78,6 @@
 				4B0622962180D9C10065306D /* NewsEntry.swift */,
 				4B0622AB21812D400065306D /* ArticleDetailViewController.swift */,
 				4B0622A721810D100065306D /* PreferencesTableViewController.swift */,
-				4B0622A9218123AA0065306D /* PreferenceHelper.swift */,
 				4B06229A2180DF9D0065306D /* ImageLoader.swift */,
 				4B06229C2180E0AA0065306D /* TableViewCell.swift */,
 				4B0622A02180E27F0065306D /* TableViewController.swift */,
@@ -176,7 +173,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B0622AA218123AA0065306D /* PreferenceHelper.swift in Sources */,
 				4B0622A12180E27F0065306D /* TableViewController.swift in Sources */,
 				4B0622972180D9C10065306D /* NewsEntry.swift in Sources */,
 				4B06229B2180DF9D0065306D /* ImageLoader.swift in Sources */,

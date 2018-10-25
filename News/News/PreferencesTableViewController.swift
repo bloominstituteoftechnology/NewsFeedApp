@@ -1,8 +1,10 @@
 import UIKit
 
-var isDarkMode: Bool = false
-
 class PreferencesTableViewController: UITableViewController {
+    
+    var isDarkMode: Bool = false
+    
+    let defaults = UserDefaults.standard
     
     @IBOutlet weak var numberOfArticlesLabel: UILabel!
     @IBOutlet weak var articlesSegmentControl: UISegmentedControl!
@@ -11,6 +13,8 @@ class PreferencesTableViewController: UITableViewController {
     @IBOutlet weak var darkModeSwitch: UISwitch!
     @IBOutlet weak var pinkaliciousModeLabel: UILabel!
     @IBOutlet weak var pinkaliciousModeSwitch: UISwitch!
+    
+   
     
     // MARK: - View loading
     
@@ -40,15 +44,15 @@ class PreferencesTableViewController: UITableViewController {
     @IBAction func articlesSegmentControlAction(_ sender: Any) {
         switch articlesSegmentControl.selectedSegmentIndex {
         case 0:
-            UserDefaults.standard.set(0, forKey: "numberOfArticles")
+            defaults.set(0, forKey: "numberOfArticles")
         case 1:
-            UserDefaults.standard.set(1, forKey: "numberOfArticles")
+            defaults.set(1, forKey: "numberOfArticles")
         case 2:
-            UserDefaults.standard.set(2, forKey: "numberOfArticles")
+            defaults.set(2, forKey: "numberOfArticles")
         case 3:
-            UserDefaults.standard.set(3, forKey: "numberOfArticles")
+            defaults.set(3, forKey: "numberOfArticles")
         default:
-            UserDefaults.standard.set(0, forKey: "numberOfArticles")
+            defaults.set(0, forKey: "numberOfArticles")
         }
     }
     
@@ -61,6 +65,8 @@ class PreferencesTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data:
+    
+    
     
     // MARK: - Navigation
     
