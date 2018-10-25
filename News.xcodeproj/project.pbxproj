@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11866E3B21822BD9001FB76C /* Defaults+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11866E3A21822BD9001FB76C /* Defaults+Utility.swift */; };
 		11D83BFB2180D8720092A9E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D83BFA2180D8720092A9E1 /* AppDelegate.swift */; };
 		11D83BFD2180D8720092A9E1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D83BFC2180D8720092A9E1 /* TableViewController.swift */; };
 		11D83C002180D8720092A9E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D83BFE2180D8720092A9E1 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11866E3A21822BD9001FB76C /* Defaults+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Defaults+Utility.swift"; sourceTree = "<group>"; };
 		11D83BF72180D8720092A9E1 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D83BFA2180D8720092A9E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11D83BFC2180D8720092A9E1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			children = (
 				11D83BFA2180D8720092A9E1 /* AppDelegate.swift */,
 				11D83BFC2180D8720092A9E1 /* TableViewController.swift */,
+				11866E3A21822BD9001FB76C /* Defaults+Utility.swift */,
 				11D83C16218101400092A9E1 /* DetailVC.swift */,
 				11D83C0C2180D9B80092A9E1 /* NewsEntry.swift */,
 				11D83C0E2180DB880092A9E1 /* Model.swift */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11866E3B21822BD9001FB76C /* Defaults+Utility.swift in Sources */,
 				11D83BFD2180D8720092A9E1 /* TableViewController.swift in Sources */,
 				11D83C0D2180D9B80092A9E1 /* NewsEntry.swift in Sources */,
 				11D83C1921810C9F0092A9E1 /* SettingsVC.swift in Sources */,
