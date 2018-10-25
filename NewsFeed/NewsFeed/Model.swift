@@ -26,7 +26,7 @@ class Model {
         
         // construct the URL
         // pass in the API Key
-        // ? -> this is for the QueryItrm
+        // ? -> this is for the QueryItem
         
         let countryItem = URLQueryItem(name: "country", value: "us")
         let apiKeyItem = URLQueryItem(name: "apiKey", value: "75558de9f7af473f832c7a0532b76365")

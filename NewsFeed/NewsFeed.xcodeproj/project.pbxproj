@@ -14,6 +14,7 @@
 		474C7EB721812B5D0012D394 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C7EB621812B5D0012D394 /* TableViewController.swift */; };
 		474C7EB9218136810012D394 /* NewsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C7EB8218136810012D394 /* NewsEntry.swift */; };
 		474C7EBB21816FE70012D394 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C7EBA21816FE70012D394 /* Model.swift */; };
+		474C7EBD21817C710012D394 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C7EBC21817C710012D394 /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		474C7EB621812B5D0012D394 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		474C7EB8218136810012D394 /* NewsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEntry.swift; sourceTree = "<group>"; };
 		474C7EBA21816FE70012D394 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		474C7EBC21817C710012D394 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				474C7EA4218129D80012D394 /* AppDelegate.swift */,
 				474C7EA8218129D80012D394 /* Main.storyboard */,
+				474C7EBC21817C710012D394 /* ImageLoader.swift */,
 				474C7EB8218136810012D394 /* NewsEntry.swift */,
 				474C7EBA21816FE70012D394 /* Model.swift */,
 				474C7EAB218129D90012D394 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				474C7EA5218129D80012D394 /* AppDelegate.swift in Sources */,
 				474C7EB9218136810012D394 /* NewsEntry.swift in Sources */,
+				474C7EBD21817C710012D394 /* ImageLoader.swift in Sources */,
 				474C7EB721812B5D0012D394 /* TableViewController.swift in Sources */,
 				474C7EBB21816FE70012D394 /* Model.swift in Sources */,
 			);
