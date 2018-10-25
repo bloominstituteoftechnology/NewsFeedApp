@@ -19,7 +19,10 @@ class PreferencesTableViewController: UITableViewController {
         super.viewWillAppear(animated)
     }
     
-
+    @IBAction func doneAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     // MARK: - Navigation
     
