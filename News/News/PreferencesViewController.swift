@@ -3,7 +3,7 @@ import UIKit
 class PreferencesViewController: UIViewController {
     
     var isDarkMode: Bool = false
-    var isLightMode: Bool = true
+    var isBlueMode: Bool = false
     
     @IBOutlet weak var segmentOutlet: UISegmentedControl!
     @IBAction func segmentedAction(_ sender: Any) {
@@ -31,23 +31,24 @@ class PreferencesViewController: UIViewController {
         }
     }
     
-    @IBAction func lightMode(_ sender: Any) {
-        if isLightMode {
+    @IBAction func blueMode(_ sender: Any) {
+        if isBlueMode {
             UserDefaults.standard.set(true, forKey: "darkMode")
-            isLightMode.toggle()
+            isBlueMode.toggle()
         } else {
             UserDefaults.standard.set(false, forKey: "darkMode")
-            isLightMode.toggle()
+            isBlueMode.toggle()
         }
     }
     
     
     func updateViews() {
         let darkMode = UserDefaults.standard.bool(forKey: "darkMode")
+        let blueMode = UserDefaults.standard.bool(forKey: "blueMode")
         let segmentedControl = UserDefaults.standard.integer(forKey: "numberOfArticles")
         segmentOutlet.selectedSegmentIndex = segmentedControl
         isDarkMode = darkMode
-        
+        isBlueMode = blueMode
     }
     
     override func viewWillAppear(_ animated: Bool) {
