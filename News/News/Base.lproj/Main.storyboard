@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aD9-3F-9Y1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="7XT-oI-WlF">
+            <objects>
+                <tableViewController id="tJK-fR-esB" customClass="TableViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="DOH-sb-PhT">
+                        <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" title="Preferences" id="Kb0-Az-uzw">
+                            <connections>
+                                <segue destination="RhX-Hx-nQy" kind="show" identifier="toPVC" id="pq5-8a-e4b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="hLD-ME-f8s" kind="show" identifier="toDetail" id="D3t-fa-7uT"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Alb-u2-6WJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="-60"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="FsO-32-4cH">
+            <objects>
+                <viewController id="hLD-ME-f8s" customClass="DetailsViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yTS-jA-lvJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYz-BY-gZJ">
+                                <rect key="frame" x="8" y="72" width="359" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zgt-xt-UDW">
+                                <rect key="frame" x="8" y="240" width="351" height="427"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="427" id="Z8Y-HC-h5n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tAb-Ar-gbH" firstAttribute="trailing" secondItem="eYz-BY-gZJ" secondAttribute="trailing" constant="8" id="0dW-cX-Gb1"/>
+                            <constraint firstItem="Zgt-xt-UDW" firstAttribute="centerX" secondItem="eYz-BY-gZJ" secondAttribute="centerX" constant="-4" id="TVz-A6-IHc"/>
+                            <constraint firstItem="eYz-BY-gZJ" firstAttribute="leading" secondItem="tAb-Ar-gbH" secondAttribute="leading" constant="8" id="UFM-Xr-pnR"/>
+                            <constraint firstItem="Zgt-xt-UDW" firstAttribute="bottom" secondItem="tAb-Ar-gbH" secondAttribute="bottom" id="VkG-S4-JCk"/>
+                            <constraint firstItem="Zgt-xt-UDW" firstAttribute="leading" secondItem="yTS-jA-lvJ" secondAttribute="leading" constant="8" id="qLQ-AI-dWL"/>
+                            <constraint firstItem="eYz-BY-gZJ" firstAttribute="top" secondItem="tAb-Ar-gbH" secondAttribute="top" constant="8" id="vVg-VD-60f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tAb-Ar-gbH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="News" id="ffe-eI-ABI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Ehn-Kh-N0V">
+                            <connections>
+                                <action selector="doneButton:" destination="hLD-ME-f8s" id="6Ru-ki-cGo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="content" destination="Zgt-xt-UDW" id="1bx-CF-UUG"/>
+                        <outlet property="headline" destination="eYz-BY-gZJ" id="Mk5-Ez-y7h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30U-P3-XNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2260" y="-713.79310344827593"/>
+        </scene>
+        <!--Preferences View Controller-->
+        <scene sceneID="AOT-EO-yci">
+            <objects>
+                <viewController id="RhX-Hx-nQy" customClass="PreferencesViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VgR-bH-HTV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7Y-vY-rFI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="iyg-O8-Jfi">
+                                        <nil key="title"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fdd-Yp-ELx">
+                                <rect key="frame" x="0.0" y="208" width="375" height="29"/>
+                                <segments>
+                                    <segment title="All"/>
+                                    <segment title="business"/>
+                                    <segment title="entertainment"/>
+                                    <segment title="health"/>
+                                </segments>
+                                <connections>
+                                    <action selector="categorySeg:" destination="RhX-Hx-nQy" eventType="valueChanged" id="NUy-LO-Vny"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7fD-Xo-X7J">
+                                <rect key="frame" x="16" y="83" width="324" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="5RQ-Z0-fr7"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="10"/>
+                                    <segment title="20"/>
+                                    <segment title="50"/>
+                                    <segment title="100"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segControl:" destination="RhX-Hx-nQy" eventType="valueChanged" id="geW-r3-YCJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w4L-cI-r3s">
+                                <rect key="frame" x="59" y="334" width="226" height="29"/>
+                                <segments>
+                                    <segment title="USA"/>
+                                    <segment title="Canada"/>
+                                    <segment title="France"/>
+                                    <segment title="Russia"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segCountry:" destination="RhX-Hx-nQy" eventType="valueChanged" id="hMq-9J-EuY"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fdd-Yp-ELx" firstAttribute="top" secondItem="7fD-Xo-X7J" secondAttribute="bottom" constant="96" id="3DS-Hc-nJp"/>
+                            <constraint firstItem="nKv-TZ-r4B" firstAttribute="bottom" secondItem="fdd-Yp-ELx" secondAttribute="bottom" constant="431" id="A9v-qq-u0v"/>
+                            <constraint firstItem="7fD-Xo-X7J" firstAttribute="leading" secondItem="VgR-bH-HTV" secondAttribute="leadingMargin" id="HsU-xL-pVO"/>
+                            <constraint firstItem="nKv-TZ-r4B" firstAttribute="trailing" secondItem="fdd-Yp-ELx" secondAttribute="trailing" id="a8r-yy-eEe"/>
+                            <constraint firstItem="fdd-Yp-ELx" firstAttribute="trailing" secondItem="I7Y-vY-rFI" secondAttribute="trailing" id="itG-bl-Lrl"/>
+                            <constraint firstItem="fdd-Yp-ELx" firstAttribute="leading" secondItem="nKv-TZ-r4B" secondAttribute="leading" id="li6-6j-WC5"/>
+                            <constraint firstItem="fdd-Yp-ELx" firstAttribute="leading" secondItem="I7Y-vY-rFI" secondAttribute="leading" id="qJs-2p-hIg"/>
+                            <constraint firstItem="w4L-cI-r3s" firstAttribute="top" secondItem="fdd-Yp-ELx" secondAttribute="bottom" constant="98" id="r5t-av-cGg"/>
+                            <constraint firstItem="nKv-TZ-r4B" firstAttribute="trailing" secondItem="7fD-Xo-X7J" secondAttribute="trailing" constant="35" id="ss7-OS-ggo"/>
+                            <constraint firstItem="7fD-Xo-X7J" firstAttribute="top" secondItem="I7Y-vY-rFI" secondAttribute="bottom" constant="19" id="uwM-M3-ccE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nKv-TZ-r4B"/>
+                    </view>
+                    <connections>
+                        <outlet property="categorySegment" destination="fdd-Yp-ELx" id="ZfU-qm-YRf"/>
+                        <outlet property="countrySeg" destination="w4L-cI-r3s" id="E6u-a3-UeM"/>
+                        <outlet property="segController" destination="7fD-Xo-X7J" id="XA9-LY-fmE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U81-Bj-XVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160.8" y="-57.121439280359823"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XBB-Qt-Vfv">
+            <objects>
+                <navigationController id="aD9-3F-9Y1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hso-BF-ndg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tJK-fR-esB" kind="relationship" relationship="rootViewController" id="UTr-tk-5Je"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUZ-Dp-NNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-806" y="59"/>
+        </scene>
+    </scenes>
+</document>
