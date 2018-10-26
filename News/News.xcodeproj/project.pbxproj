@@ -18,6 +18,8 @@
 		4404A0DD2180E0B400672D85 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4404A0DC2180E0B400672D85 /* TableViewCell.xib */; };
 		4404A0DF2180E0CC00672D85 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4404A0DE2180E0CC00672D85 /* TableViewCell.swift */; };
 		4404A0E12181085200672D85 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4404A0E02181085200672D85 /* PreferencesViewController.swift */; };
+		4404A10921822BEA00672D85 /* Defaults+utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4404A10821822BEA00672D85 /* Defaults+utility.swift */; };
+		4404A14921825A9700672D85 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4404A14821825A9700672D85 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		4404A0DC2180E0B400672D85 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		4404A0DE2180E0CC00672D85 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4404A0E02181085200672D85 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		4404A10821822BEA00672D85 /* Defaults+utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Defaults+utility.swift"; sourceTree = "<group>"; };
+		4404A14821825A9700672D85 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +73,9 @@
 				4404A0C42180D85E00672D85 /* AppDelegate.swift */,
 				4404A0C62180D85E00672D85 /* TableViewController.swift */,
 				4404A0E02181085200672D85 /* PreferencesViewController.swift */,
+				4404A10821822BEA00672D85 /* Defaults+utility.swift */,
 				4404A0C82180D85E00672D85 /* Main.storyboard */,
+				4404A14821825A9700672D85 /* DetailsViewController.swift */,
 				4404A0D62180D9CE00672D85 /* NewsEntry.swift */,
 				4404A0D82180DB9300672D85 /* Model.swift */,
 				4404A0DA2180DF9C00672D85 /* ImageLoader.swift */,
@@ -154,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4404A10921822BEA00672D85 /* Defaults+utility.swift in Sources */,
 				4404A0C72180D85E00672D85 /* TableViewController.swift in Sources */,
+				4404A14921825A9700672D85 /* DetailsViewController.swift in Sources */,
 				4404A0D72180D9CE00672D85 /* NewsEntry.swift in Sources */,
 				4404A0DB2180DF9C00672D85 /* ImageLoader.swift in Sources */,
 				4404A0E12181085200672D85 /* PreferencesViewController.swift in Sources */,
