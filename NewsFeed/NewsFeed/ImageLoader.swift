@@ -9,8 +9,8 @@
 import UIKit
 
 // URLSession for the data feed
-// completion needs to return an data, if we get an image from it.. all is well...
-// passing the image as the argument of completion, e.g. bool, success etc)
+// completion needs to return image data, if we get an image from it.. all is well...
+// passing the image as the argument of completion, (e.g. bool, success etc)
 
 class ImageLoader {
     static func fetchImage(from url: URL?, completion: @escaping (_ image: UIImage?) -> Void) {

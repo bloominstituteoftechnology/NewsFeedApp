@@ -41,7 +41,7 @@ class Model {
         // create a dataTask
         
         let dataTask = URLSession.shared.dataTask(with: fetchURL) { data, _, error in
-            
+    
             guard error == nil,
                 let data = data else {
                     NSLog("Unable to fetch data")

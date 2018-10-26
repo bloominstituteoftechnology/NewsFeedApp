@@ -15,6 +15,9 @@
 		474C7EB9218136810012D394 /* NewsEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C7EB8218136810012D394 /* NewsEntry.swift */; };
 		474C7EBB21816FE70012D394 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C7EBA21816FE70012D394 /* Model.swift */; };
 		474C7EBD21817C710012D394 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C7EBC21817C710012D394 /* ImageLoader.swift */; };
+		474C7EBF21820E540012D394 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474C7EBE21820E540012D394 /* TableViewCell.xib */; };
+		474C7EC121820E5C0012D394 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C7EC021820E5C0012D394 /* TableViewCell.swift */; };
+		474C7EC521822E4E0012D394 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474C7EC421822E4E0012D394 /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		474C7EB8218136810012D394 /* NewsEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEntry.swift; sourceTree = "<group>"; };
 		474C7EBA21816FE70012D394 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		474C7EBC21817C710012D394 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		474C7EBE21820E540012D394 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		474C7EC021820E5C0012D394 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		474C7EC421822E4E0012D394 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +50,6 @@
 		474C7E98218129D80012D394 = {
 			isa = PBXGroup;
 			children = (
-				474C7EB621812B5D0012D394 /* TableViewController.swift */,
 				474C7EA3218129D80012D394 /* NewsFeed */,
 				474C7EA2218129D80012D394 /* Products */,
 			);
@@ -64,8 +69,12 @@
 				474C7EA4218129D80012D394 /* AppDelegate.swift */,
 				474C7EA8218129D80012D394 /* Main.storyboard */,
 				474C7EBC21817C710012D394 /* ImageLoader.swift */,
+				474C7EBE21820E540012D394 /* TableViewCell.xib */,
+				474C7EC421822E4E0012D394 /* UserDefaults.swift */,
+				474C7EC021820E5C0012D394 /* TableViewCell.swift */,
 				474C7EB8218136810012D394 /* NewsEntry.swift */,
 				474C7EBA21816FE70012D394 /* Model.swift */,
+				474C7EB621812B5D0012D394 /* TableViewController.swift */,
 				474C7EAB218129D90012D394 /* Assets.xcassets */,
 				474C7EAD218129D90012D394 /* LaunchScreen.storyboard */,
 				474C7EB0218129D90012D394 /* Info.plist */,
@@ -132,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				474C7EAF218129D90012D394 /* LaunchScreen.storyboard in Resources */,
+				474C7EBF21820E540012D394 /* TableViewCell.xib in Resources */,
 				474C7EAC218129D90012D394 /* Assets.xcassets in Resources */,
 				474C7EAA218129D80012D394 /* Main.storyboard in Resources */,
 			);
@@ -147,7 +157,9 @@
 				474C7EA5218129D80012D394 /* AppDelegate.swift in Sources */,
 				474C7EB9218136810012D394 /* NewsEntry.swift in Sources */,
 				474C7EBD21817C710012D394 /* ImageLoader.swift in Sources */,
+				474C7EC121820E5C0012D394 /* TableViewCell.swift in Sources */,
 				474C7EB721812B5D0012D394 /* TableViewController.swift in Sources */,
+				474C7EC521822E4E0012D394 /* UserDefaults.swift in Sources */,
 				474C7EBB21816FE70012D394 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
