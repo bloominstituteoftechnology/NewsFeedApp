@@ -3,10 +3,11 @@ import UIKit
 class TableViewController: UITableViewController {
     
     let reuseIdentifier = "newcell"
+    let defaults = UserDefaults.standard
+    let pinkalicious = UIColor(red: 1, green: 0.549, blue: 0.549, alpha: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         
         
         let nib = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: reuseIdentifier)
@@ -39,12 +40,27 @@ class TableViewController: UITableViewController {
             }
         }
         
-        let darkMode = UserDefaults.standard.bool(forKey: "darkMode")
+        let darkMode = defaults.bool(forKey: "darkMode")
         DispatchQueue.main.async {
             if darkMode {
                 cell.backgroundColor = UIColor.black
                 cell.contentView.backgroundColor = UIColor.black
                 tableView.backgroundColor = UIColor.black
+                cell.titleLabel.textColor = UIColor.white
+            } else {
+                cell.backgroundColor = UIColor.white
+                cell.contentView.backgroundColor = UIColor.white
+                tableView.backgroundColor = UIColor.white
+                cell.titleLabel.textColor = UIColor.black
+            }
+        }
+        
+        let pinkaliciousMode = defaults.bool(forKey: "pinkaliciousMode")
+        DispatchQueue.main.async {
+            if pinkaliciousMode {
+                cell.backgroundColor = self.pinkalicious
+                cell.contentView.backgroundColor = self.pinkalicious
+                tableView.backgroundColor = self.pinkalicious
                 cell.titleLabel.textColor = UIColor.white
             } else {
                 cell.backgroundColor = UIColor.white
