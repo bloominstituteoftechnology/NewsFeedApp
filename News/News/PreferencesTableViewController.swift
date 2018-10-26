@@ -22,9 +22,17 @@ class PreferencesTableViewController: UITableViewController {
         super.viewDidLoad()
     }
     
+    func updateViews() {
+        let darkMode = defaults.bool(forKey: "darkMode")
+        isDarkMode = darkMode
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        updateViews()
     }
+    
+
     
     // MARK: - Theme style
     
@@ -57,7 +65,13 @@ class PreferencesTableViewController: UITableViewController {
     }
     
     @IBAction func toggleDarkModeSwitch(_ sender: Any) {
-        
+        if isDarkMode == true {
+            defaults.set(true, forKey: "darkMode")
+            isDarkMode.toggle()
+        } else {
+            defaults.set(false, forKey: "darkMode")
+            isDarkMode.toggle()
+        }
     }
     
     @IBAction func doneAction(_ sender: Any) {

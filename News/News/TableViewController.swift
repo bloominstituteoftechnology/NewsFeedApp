@@ -42,15 +42,15 @@ class TableViewController: UITableViewController {
         let darkMode = UserDefaults.standard.bool(forKey: "darkMode")
         DispatchQueue.main.async {
             if darkMode {
-                cell.backgroundColor = #colorLiteral(red: 0.1215686277, green: 0.1294117719, blue: 0.1411764771, alpha: 1)
-                cell.contentView.backgroundColor = #colorLiteral(red: 0.1215686277, green: 0.1294117719, blue: 0.1411764771, alpha: 1)
-                tableView.backgroundColor = #colorLiteral(red: 0.1215686277, green: 0.1294117719, blue: 0.1411764771, alpha: 1)
-                cell.titleLabel.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                cell.backgroundColor = UIColor.black
+                cell.contentView.backgroundColor = UIColor.black
+                tableView.backgroundColor = UIColor.black
+                cell.titleLabel.textColor = UIColor.white
             } else {
-                cell.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-                cell.contentView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-                tableView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-                cell.titleLabel.textColor = #colorLiteral(red: 0.1215686277, green: 0.1294117719, blue: 0.1411764771, alpha: 1)
+                cell.backgroundColor = UIColor.white
+                cell.contentView.backgroundColor = UIColor.white
+                tableView.backgroundColor = UIColor.white
+                cell.titleLabel.textColor = UIColor.black
             }
         }
         
