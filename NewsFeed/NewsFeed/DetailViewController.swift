@@ -24,7 +24,17 @@ class DetailViewController: UIViewController {
         headlineLabel.text = record.title
         authorLabel.text = record.author
         articleTextView.text = record.content
+        imageLoader()
     }
     
     
+    func imageLoader () {
+        ImageLoader.fetchImage(from: record?.urlToImage) { image in
+            guard let image = image else { return }
+            DispatchQueue.main.async {
+                self.newsImage.image = image
+            }
+        }
+        
+    }
 }
