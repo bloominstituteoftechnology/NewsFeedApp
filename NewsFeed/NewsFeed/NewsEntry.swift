@@ -12,16 +12,14 @@ import UIKit
 // codable -> JSON
 
 struct NewsEntry: Codable {
-   // let source: [String: String?]?
-   // let author: String?
+    let source: [String: String?]?
+    let author: String?
     let title: String?
     let description: String?
     let url: URL? // remember to make this a hyper link
     let urlToImage: URL?
-   // let publishedAt: String?
+    let publishedAt: String?
     let content: String?
-    
-    // image
     let image: UIImage? = nil
 
 
@@ -29,10 +27,13 @@ struct NewsEntry: Codable {
 // must perfect
 
 private enum CodingKeys: String, CodingKey {
-    case title,
+    case source,
+         author,
+         title,
          description,
          url,
          urlToImage,
+         publishedAt,
          content
     }
 }
